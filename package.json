@@ -2,10 +2,17 @@
   "name": "tw-first-project",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "live-server public"
+  },
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^9.7.4",
     "postcss-cli": "^7.1.0",
     "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
   }
 }
